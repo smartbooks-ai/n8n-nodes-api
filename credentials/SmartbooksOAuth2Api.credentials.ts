@@ -48,7 +48,7 @@ export class SmartbooksOAuth2Api implements ICredentialType {
 			displayName: 'Scope',
 			name: 'scope',
 			type: 'hidden',
-			default: 'profile:read openid profile offline_access input:write reporting:read intercompany_matching:read'
+			default: 'profile:read openid profile offline_access input:write reporting:read modeling:read modeling:write'
 		},
 		{
 			displayName: 'Authentication',
