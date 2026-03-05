@@ -28,9 +28,7 @@ The node uses **Smartbooks OAuth2 API** credentials.
 
 The node supports these Smartbooks resources and their operations:
 
-- **App** – app-related operations
 - **Input** – e.g. batch input (by year and period)
-- **Intercompany Matching** – retrieve intercompany matching information
 - **Module** – module operations
 - **Profile** – profile operations
 - **Reporting** – reporting operations
