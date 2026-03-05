@@ -27,7 +27,7 @@ export class SmartbooksApi implements INodeType {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',
 			},
-			baseURL: 'https://app-dev.smartbooks.ai',
+			baseURL: 'https://app.smartbooks.ai',
 		},
 		properties: apiProperties,
 	};
