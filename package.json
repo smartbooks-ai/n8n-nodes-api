@@ -1,37 +1,50 @@
 {
-  "name": "@smartbooks-ai/n8n-nodes-api",
-  "version": "0.1.5",
-  "description": "n8n community node for Smartbooks API",
-  "license": "MIT",
-  "homepage": "",
-  "keywords": ["n8n-community-node-package"],
-  "author": { "name": "Smartbooks", "email": "info@smartbooks.ai" },
-  "public": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/smartbooks-ai/n8n-nodes-api.git"
-  },
-  "scripts": {
-    "build": "n8n-node build",
-    "build:watch": "tsc --watch",
-    "dev": "n8n-node dev",
-    "lint": "n8n-node lint",
-    "lint:fix": "n8n-node lint --fix",
-    "release": "n8n-node release"
-  },
-  "files": ["dist"],
-  "n8n": {
-    "n8nNodesApiVersion": 1,
-    "strict": true,
-    "credentials": ["dist/credentials/SmartbooksOAuth2Api.credentials.js"],
-    "nodes": ["dist/nodes/SmartbooksApi/SmartbooksApi.node.js"]
-  },
-  "devDependencies": {
-    "@n8n/node-cli": "*",
-    "eslint": "9.39.3",
-    "prettier": "^3.8.1",
-    "release-it": "^19.0.4",
-    "typescript": "^5.9.3"
-  },
-  "peerDependencies": { "n8n-workflow": "*" }
+	"name": "@smartbooks-ai/n8n-nodes-api",
+	"version": "0.1.5",
+	"description": "n8n community node for Smartbooks API",
+	"license": "MIT",
+	"homepage": "",
+	"keywords": [
+		"n8n-community-node-package"
+	],
+	"author": {
+		"name": "Smartbooks",
+		"email": "info@smartbooks.ai"
+	},
+	"public": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/smartbooks-ai/n8n-nodes-api.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SmartbooksOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/SmartbooksApi/SmartbooksApi.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.3",
+		"prettier": "^3.8.1",
+		"release-it": "^20.0.0-1",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
 }
