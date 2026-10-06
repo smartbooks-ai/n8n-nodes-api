@@ -18,11 +18,12 @@ npm install @smartbooks-ai/n8n-nodes-api
 
 ## Credentials
 
-The node uses **Smartbooks OAuth2 API** credentials.
+The node signs in with a **Smartbooks OAuth2 API** credential. The flow is OAuth 2.0 with PKCE, so there is no client secret.
 
-1. Add a **Smartbooks API** credential in n8n.
-2. Use your Smartbooks OAuth2 client ID and client secret.
-3. Authorize; the node will use this credential for all requests.
+1. Create a **Smartbooks OAuth2 API** credential.
+2. On n8n Cloud, choose **Connect** and sign in to Smartbooks. Cloud uses the shared redirect URL `https://oauth.n8n.cloud/oauth2/callback`, and the client ID is built in.
+3. On a self-hosted instance, enter the client ID issued for that instance. If you do not already have one, contact Smartbooks AI support at support@smartbooks.ai and include the OAuth Redirect URL shown on the credential.
+4. Connect and sign in. Every Smartbooks API node in the workflow uses this credential.
 
 ## Resources & operations
 
