@@ -1,9 +1,9 @@
 {
 	"name": "@smartbooks-ai/n8n-nodes-api",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "n8n community node for Smartbooks API",
 	"license": "MIT",
-	"homepage": "",
+	"homepage": "https://github.com/smartbooks-ai/n8n-nodes-api#readme",
 	"keywords": [
 		"n8n-community-node-package"
 	],
