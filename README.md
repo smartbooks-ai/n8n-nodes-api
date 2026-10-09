@@ -37,6 +37,31 @@ The node supports these Smartbooks resources and their operations:
 
 Choose **Resource** and **Operation** in the node; required parameters (e.g. company code, IDs) will appear as needed.
 
+## Example: Get Profile
+
+1. Add a **Smartbooks API** node to the workflow.
+2. Select your **Smartbooks OAuth2 API** credential.
+3. Set **Resource** to **Profile**.
+4. Set **Operation** to **Get Profile**.
+5. Execute the node.
+
+The node returns one item for the signed-in user, including the companies they can open. A company's `code` (for example `jc2qwbjz`) is the **Company Code** to enter on other operations.
+
+```json
+{
+  "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "tenants": [
+    {
+      "code": "acme",
+      "description": "Acme Group",
+      "companies": [
+        { "code": "jc2qwbjz", "description": "Acme BV" }
+      ]
+    }
+  ]
+}
+```
+
 ## License
 
 MIT © [smartbooks](https://smartbooks.ai)
