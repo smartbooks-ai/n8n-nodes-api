@@ -5,7 +5,7 @@ export class SmartbooksApi implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Smartbooks API',
 		name: 'smartbooksApi',
-		icon: 'file:./../../icons/logo.svg',
+		icon: { light: 'file:./../../icons/logo.light.svg', dark: 'file:./../../icons/logo.dark.svg' },
 		usableAsTool: true,
 		group: ['transform'],
 		version: 1,
