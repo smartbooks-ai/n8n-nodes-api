@@ -45,7 +45,7 @@ export const apiProperties:INodeProperties[] = [
     },
     options: [
       {
-        name: "Batch Input",
+        name: "Batch",
         value: "Input Post Batch",
         action: "Batch input",
         description: "Batch input for a given year and period. Requires scope input:write.",
@@ -73,7 +73,7 @@ export const apiProperties:INodeProperties[] = [
     },
     options: [
       {
-        name: "Get Module",
+        name: "Get",
         value: "Modules Get Item Public",
         action: "Get module",
         description: "Get a module by code. Requires scope modeling:read.",
@@ -229,7 +229,7 @@ export const apiProperties:INodeProperties[] = [
     },
     options: [
       {
-        name: "Get Profile",
+        name: "Get",
         value: "Profile My",
         action: "Get profile",
         description: "Get profile details including allowed tenants and companies. Requires scope profile:read.",

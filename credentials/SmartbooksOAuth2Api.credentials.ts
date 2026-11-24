@@ -11,7 +11,7 @@ export class SmartbooksOAuth2Api implements ICredentialType {
 
 	displayName = 'Smartbooks OAuth2 API';
 
-	icon: Icon = { light: 'file:../icons/logo.svg', dark: 'file:../icons/logo.dark.svg' };
+	icon: Icon = { light: 'file:../icons/logo.light.svg', dark: 'file:../icons/logo.dark.svg' };
 
 	documentationUrl = 'https://app.smartbooks.ai/docs';
 
